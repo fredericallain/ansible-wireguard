@@ -1,0 +1,7 @@
+- name: Setup Wireguard
+  hosts: wireguard
+  become: true
+  gather_facts: true
+  order: sorted
+  roles:
+    - role: wireguard
